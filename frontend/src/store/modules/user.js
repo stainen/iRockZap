@@ -43,7 +43,6 @@ const user = {
     async UserLogin ({ commit, dispatch }, user) {
       user.email = user.email.trim()
       try {
-        await validaapi()
         const { data } = await RealizarLogin(user)
         localStorage.setItem('token', JSON.stringify(data.token))
         localStorage.setItem('username', data.username)

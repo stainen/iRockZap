@@ -1,7 +1,6 @@
 import { RealizarLogin } from '../../service/login'
 import { Notify, Dark } from 'quasar'
 import { socketIO } from 'src/utils/socket'
-import { validaapi } from 'src/service/validaapi'
 
 const socket = socketIO()
 
